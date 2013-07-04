@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background: #222 url(pattern_40.gif) repeat;
+	color:#fff;
+	font-family: 'Roboto', sans-serif;
+	font-weight:500;
+	text-transform:uppercase;
+	font-size:18px;
+	min-height:600px
+}
+#slider {
+	width:1300px;
+	height:400px;
+	margin:50px auto 0px;
+}
+#footer{
+	margin-left: 4.255319148936175%;
+	margin-bottom: 1%;
+	position:absolute;
+    bottom:0px;
+	min-width:1300px; 
+}
+#footer .soft{
+	float:left;
+	height:72px;
+	margin-right:7%;
+	cursor:pointer;
+}
+#jquery{
+	width:194px;
+	background:url(jquery.png) no-repeat;
+	background-size: 100%;
+}
+#mysql{
+	width:141px;
+	background:url(mysql.png) no-repeat;
+	background-size: 100%;
+}
+#django{
+	width:206px;
+	background:url(django.png) no-repeat;
+	background-size: 100%;
+}
+#php{
+	width:136px;
+	background:url(php.png) no-repeat;
+	background-size: 100%;
+}
+#apache{
+	width:188px;
+	background:url(apache.png) no-repeat;
+	background-size: 100%;
+	margin-right:0px!important;
+}
