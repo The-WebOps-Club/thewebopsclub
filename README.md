@@ -1,1 +1,1 @@
-This Git Repository is for The WebOps Club website
+Behold the landing page of the WebOps Club! 
