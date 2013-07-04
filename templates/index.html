@@ -21,9 +21,22 @@ $(document).ready(function() {
     $("#slider").hover(
 	function(){
 		window.myFlux.next('bars3d');},function(){window.myFlux.stop();});
+	$("#slider").center();
 });
 </script>
-
+<script type="text/javascript">
+        (function($){
+          $.fn.extend({
+          center: function () {
+                return this.each(function() {
+                        var top = ($(window).height() - $(this).outerHeight()) / 2;
+                        var left = ($(window).width() - $(this).outerWidth()) / 2;
+                        $(this).css({position:'absolute', margin:0, top: (top > 0 ? top : 0)+'px', left: (left > 0 ? left : 0)+'px'});
+                });
+            }   
+         });
+        })(jQuery);
+</script>
 </head>
 <body>
 <div class="container row-fluid">
