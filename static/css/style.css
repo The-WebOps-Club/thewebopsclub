@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 body{
-	background: #222 url(pattern_40.gif) repeat;
+	background: #222 url(../img/pattern_40.gif) repeat;
 	color:#fff;
 	font-family: 'Roboto', sans-serif;
 	font-weight:500;
@@ -29,27 +29,27 @@ body{
 }
 #jquery{
 	width:194px;
-	background:url(jquery.png) no-repeat;
+	background:url(../img/jquery.png) no-repeat;
 	background-size: 100%;
 }
 #mysql{
 	width:141px;
-	background:url(mysql.png) no-repeat;
+	background:url(../img/mysql.png) no-repeat;
 	background-size: 100%;
 }
 #django{
 	width:206px;
-	background:url(django.png) no-repeat;
+	background:url(../img/django.png) no-repeat;
 	background-size: 100%;
 }
 #php{
 	width:136px;
-	background:url(php.png) no-repeat;
+	background:url(../img/php.png) no-repeat;
 	background-size: 100%;
 }
 #apache{
 	width:188px;
-	background:url(apache.png) no-repeat;
+	background:url(../img/apache.png) no-repeat;
 	background-size: 100%;
 	margin-right:0px!important;
 }
