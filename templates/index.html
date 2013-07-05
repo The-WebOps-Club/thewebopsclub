@@ -31,7 +31,10 @@ $(function(){
 $(document).ready(function() {
     $("#slider").hover(
 	function(){
-		window.myFlux.next('bars3d');},function(){window.myFlux.stop();});
+		if(flux.browser.supports3d){window.myFlux.next('bars3d');}
+		else{window.myFlux.next('blinds');}
+		},
+	function(){window.myFlux.stop();});
 	$("#slider").center();
 });
 $(window).resize(function(){$("#slider").center();});
