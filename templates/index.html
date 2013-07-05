@@ -8,12 +8,23 @@
 <script src="{{site_url}}static/js/flux.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 $(function(){
+	if(!flux.browser.supportsTransitions){alert("This page requires a browser that supports CSS3 transitions");}
+	if(flux.browser.supports3d){
     window.myFlux = new flux.slider('#slider',{
 		autoplay: false,
 		pagination: false,
 		controls: true,
 		transitions: ['tiles3d']
 	});
+	}
+	else{
+		window.myFlux = new flux.slider('#slider',{
+		autoplay: false,
+		pagination: false,
+		controls: true,
+		transitions: ['blocks2']
+	});
+	}
 });
 </script>
 <script type="text/javascript">
