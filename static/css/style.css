@@ -64,6 +64,7 @@ ul.osx-dock li:hover a {
 -o-transform: scale(1.5);
 -ms-transform-origin: center bottom;
 -ms-transform: scale(1.5);
+-webkit-box-reflect: below 3px;
 }
  
 ul.osx-dock li.nearby {
@@ -93,7 +94,7 @@ div.cap { display: block; height: 100px; width: 40px; background: url(../img/doc
 div.cap.left { position: absolute; bottom: 0px; left: 0px; }
 div.cap.right { background-position: right bottom; position: absolute; top: 0px; right: 0px; }
 
-.margins { margin: 4% auto 0;}
+.margins { margin: 3.5% auto 0;}
 ul.osx-dock li span {
 position: absolute;
 bottom: 80px;
