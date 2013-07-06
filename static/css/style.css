@@ -16,6 +16,12 @@ body{
 	width:475px;
 	height:73px;
 }
+#presents {
+	margin:0.1% auto 0px;
+	width:80px;
+	height:20px;
+	display:block;
+}
 #slider {
 	width:1235px;
 	height:380px;
@@ -94,7 +100,7 @@ div.cap { display: block; height: 100px; width: 40px; background: url(../img/doc
 div.cap.left { position: absolute; bottom: 0px; left: 0px; }
 div.cap.right { background-position: right bottom; position: absolute; top: 0px; right: 0px; }
 
-.margins { margin: 3.5% auto 0;}
+.margins { margin: 2% auto 0;}
 ul.osx-dock li span {
 position: absolute;
 bottom: 80px;
