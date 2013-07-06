@@ -14,7 +14,7 @@ body{
 	width:1300px;
 	height:400px;
 }
-ul.osx-dock li { display: block; position: relative; float: left; width: 50px; height: 50px; margin: 60px 10px 4px; -webkit-transition: 0.15s linear; -webkit-transition-property: -webkit-transform margin;
+ul.osx-dock li { display: block; position: relative; float: left; width: 50px; height: 50px; margin: 60px 5px 4px; -webkit-transition: 0.15s linear; -webkit-transition-property: -webkit-transform margin;
 -moz-transition: 0.15s linear; -moz-transition-property: -moz-transform margin;
 -o-transition: 0.15s linear; -o-transition-property: -o-transform margin;
 -ms-transition: 0.15s linear; -ms-transition-property: -ms-transform margin; text-align: center; }
