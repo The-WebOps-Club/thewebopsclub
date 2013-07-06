@@ -9,6 +9,7 @@ body{
 	font-size:18px;
 	min-height:400px;
 	min-width:1320px;
+	overflow: hidden;
 }
 #slider {
 	width:1300px;
@@ -27,15 +28,15 @@ margin: 0;
 -webkit-transition: 0.15s linear;
 -webkit-transition-property: -webkit-transform margin;
 -webkit-box-reflect: below 2px; -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.45, transparent), to(rgba(255, 255, 255, 0.25)));
+
 -moz-transition: 0.15s linear;
 -moz-transition-property: -moz-transform margin;
--moz-box-reflect: below 2px; -moz-gradient(linear, left top, left bottom, from(transparent), color-stop(0.45, transparent), to(rgba(255, 255, 255, 0.25)));
+
 -o-transition: 0.15s linear;
 -o-transition-property: -o-transform margin;
--o-box-reflect: below 2px; -o-gradient(linear, left top, left bottom, from(transparent), color-stop(0.45, transparent), to(rgba(255, 255, 255, 0.25)));
+
 -ms-transition: 0.15s linear;
 -ms-transition-property: -webkit-transform margin;
--ms-box-reflect: below 2px; -ms-gradient(linear, left top, left bottom, from(transparent), color-stop(0.45, transparent), to(rgba(255, 255, 255, 0.25)));
 }
  
 ul.osx-dock li a img {
