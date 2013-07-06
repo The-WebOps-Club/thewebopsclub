@@ -35,30 +35,35 @@ $(document).ready(function() {
 		else{window.myFlux.next('blinds');}
 		},
 	function(){window.myFlux.stop();});
-	$("#slider").center();
 });
-$(window).resize(function(){$("#slider").center();});
-</script>
-<script type="text/javascript">
-        (function($){
-          $.fn.extend({
-          center: function () {
-                return this.each(function() {
-                        var top = ($(window).height() - $(this).outerHeight()) / 2;
-                        var left = ($(window).width() - $(this).outerWidth()) / 2;
-                        $(this).css({position:'absolute', margin:0, top: (top > 0 ? top : 0)+'px', left: (left > 0 ? left : 0)+'px'});
-                });
-            }   
-         });
-        })(jQuery);
+$(window).resize(function(){$("#slider").remvoveClass("margins").addClass("margins");});
 </script>
 </head>
 <body>
 <div class="container row-fluid">
-      <div id="slider">
+      <div id="slider" class="margins">
           <img src="{{site_url}}static/img/prince.jpg" alt="" />
           <img src="{{site_url}}static/img/prince1.jpg" alt="" />
       </div>
+</div>
+<div id="dockContainer">
+	<div id="dockWrapper"> 
+		  <div class="cap left"></div>
+          <ul class="osx-dock">
+                <li class="active">
+                    <a href="https://developers.google.com/" title="Google Developers" target="_blank"><img src="{{site_url}}static/img/google.png" /></a>
+                </li>
+                <li class="">
+                    <a href="https://developers.facebook.com/" title="Facebook Developers" target="_blank"><img src="{{site_url}}static/img/fb-dev.png" /></a>
+                </li>
+                <li class="">
+                    <a href="http://www.zurb.com" title="ZURB"><img src="{{site_url}}static/img/google.png" /></a>
+                </li>
+                <li class="">
+                    <a href="http://www.zurb.com" title="ZURB"><img src="{{site_url}}static/img/google.png" /></a>
+                </li>
+          </ul>
+    </div>
 </div>
 </body>
 </html>
