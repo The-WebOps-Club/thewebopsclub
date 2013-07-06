@@ -14,7 +14,10 @@ body{
 	width:1300px;
 	height:400px;
 }
-ul.osx-dock li { display: block; position: relative; float: left; width: 50px; height: 50px; margin: 60px 0 4px 0; -webkit-transition: 0.15s linear; -webkit-transition-property: -webkit-transform margin; text-align: center; }
+ul.osx-dock li { display: block; position: relative; float: left; width: 50px; height: 50px; margin: 60px 0 4px 0; -webkit-transition: 0.15s linear; -webkit-transition-property: -webkit-transform margin;
+-moz-transition: 0.15s linear; -moz-transition-property: -moz-transform margin;
+-o-transition: 0.15s linear; -o-transition-property: -o-transform margin;
+-ms-transition: 0.15s linear; -ms-transition-property: -ms-transform margin; text-align: center; }
 
 ul.osx-dock li a {
 display: block;
@@ -24,6 +27,15 @@ margin: 0;
 -webkit-transition: 0.15s linear;
 -webkit-transition-property: -webkit-transform margin;
 -webkit-box-reflect: below 2px; -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.45, transparent), to(rgba(255, 255, 255, 0.25)));
+-moz-transition: 0.15s linear;
+-moz-transition-property: -moz-transform margin;
+-moz-box-reflect: below 2px; -moz-gradient(linear, left top, left bottom, from(transparent), color-stop(0.45, transparent), to(rgba(255, 255, 255, 0.25)));
+-o-transition: 0.15s linear;
+-o-transition-property: -o-transform margin;
+-o-box-reflect: below 2px; -o-gradient(linear, left top, left bottom, from(transparent), color-stop(0.45, transparent), to(rgba(255, 255, 255, 0.25)));
+-ms-transition: 0.15s linear;
+-ms-transition-property: -webkit-transform margin;
+-ms-box-reflect: below 2px; -ms-gradient(linear, left top, left bottom, from(transparent), color-stop(0.45, transparent), to(rgba(255, 255, 255, 0.25)));
 }
  
 ul.osx-dock li a img {
@@ -38,6 +50,12 @@ z-index: 200;
 ul.osx-dock li:hover a {
 -webkit-transform-origin: center bottom;
 -webkit-transform: scale(1.5);
+-moz-transform-origin: center bottom;
+-moz-transform: scale(1.5);
+-o-transform-origin: center bottom;
+-o-transform: scale(1.5);
+-ms-transform-origin: center bottom;
+-ms-transform: scale(1.5);
 }
  
 ul.osx-dock li.nearby {
@@ -48,25 +66,14 @@ z-index: 100;
 ul.osx-dock li.nearby a {
 -webkit-transform-origin: center bottom;
 -webkit-transform: scale(1.25);
+-moz-transform-origin: center bottom;
+-moz-transform: scale(1.25);
+-o-transform-origin: center bottom;
+-o-transform: scale(1.25);
+-ms-transform-origin: center bottom;
+-ms-transform: scale(1.25);
 }
  
-ul.osx-dock li span {
-background: rgba(0,0,0,0.75);
-position: absolute;
-bottom: 80px;
-margin: 0 auto;
-display: none;
-width: auto;
-font-size: 11px;
-font-weight: bold;
-padding: 3px 6px;
--webkit-border-radius: 6px;
-color: #fff;
-}
-ul.osx-dock li:hover span {
-display: block;
-}
-
 ul.osx-dock { display: inline-block; height: 130px; padding: 0 40px 0 0; background: url(../img/dock-background-left.png) no-repeat right bottom; overflow: hidden; margin: 0 0 0 40px; }
 
 #dockContainer { position: fixed; bottom: 12px; height: 120px; padding: 50px 0 0; text-align: center; -webkit-border-radius: 6px; -moz-border-radius: 6px; width: 100%; line-height: 1; z-index: 100; }
