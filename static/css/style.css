@@ -10,6 +10,12 @@ body{
 	min-height:500px;
 	min-width:1340px;
 }
+#cfi-header {
+	margin:1% auto 0px;
+	background:url(../img/cfi.png) no-repeat;
+	width:475px;
+	height:73px;
+}
 #slider {
 	width:1235px;
 	height:380px;
@@ -87,7 +93,7 @@ div.cap { display: block; height: 100px; width: 40px; background: url(../img/doc
 div.cap.left { position: absolute; bottom: 0px; left: 0px; }
 div.cap.right { background-position: right bottom; position: absolute; top: 0px; right: 0px; }
 
-.margins { margin: 5% auto 0;}
+.margins { margin: 4% auto 0;}
 ul.osx-dock li span {
 position: absolute;
 bottom: 80px;
