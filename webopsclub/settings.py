@@ -18,6 +18,8 @@ LANGUAGE_CODE = 'en-gb'
 
 SITE_ID = 1
 
+SITE_URL = 'http://localhost:8000/'
+
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
 USE_I18N = True
@@ -112,3 +114,14 @@ LOGGING = {
         },
     }
 }
+
+TEMPLATE_CONTEXT_PROCESSORS = ("django.contrib.auth.context_processors.auth",
+    "django.core.context_processors.debug",
+    "django.core.context_processors.i18n",
+    "django.core.context_processors.media",
+    "django.core.context_processors.static",
+    "django.core.context_processors.request",
+    "django.contrib.messages.context_processors.messages",
+    "webopsclub.context_processors.site_url",
+    "webopsclub.context_processors.static_url",
+)

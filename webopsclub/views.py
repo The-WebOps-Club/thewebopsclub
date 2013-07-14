@@ -9,4 +9,4 @@ def home(request):
     This is the default landing page view.
     Currently, this page serves the coming_soon.html file
     """ 
-    return render_to_response('coming_soon.html', locals(), context_instance = RequestContext(request))
+    return render_to_response('index.html', locals(), context_instance = RequestContext(request))
