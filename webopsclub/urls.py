@@ -8,6 +8,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'webopsclub.views.home', name='home'),
+    url(r'^updates/(?P<last_update_received>\d+)/$','updates.views.update_manager', name='update-manager'),
     # url(r'^webopsclub/', include('webopsclub.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:

@@ -1,103 +1,107 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>The WebOps Club</title>
-<link href="{{site_url}}static/css/style.css" rel="stylesheet" />
-<script src="{{site_url}}static/js/jquery.js" type="text/javascript"></script>
-<script src="{{site_url}}static/js/flux.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-$(function(){
-	if(flux.browser.supports3d){
-    window.myFlux = new flux.slider('#slider',{
-		autoplay: false,
-		pagination: false,
-		controls: true,
-		transitions: ['tiles3d']
-	});
-	}
-	else{
-		window.myFlux = new flux.slider('#slider',{
-		autoplay: false,
-		pagination: false,
-		controls: true,
-		transitions: ['blocks2']
-	});
-	}
-	if(!flux.browser.supportsTransitions){alert("This page requires a browser that supports CSS3 transitions");}
-});
-</script>
-<script type="text/javascript">
-$(document).ready(function() {
-    $("#slider").hover(
-	function(){
-		if(flux.browser.supports3d){window.myFlux.next('bars3d');}
-		else{window.myFlux.next('blinds');}
-		},
-	function(){window.myFlux.stop();});
-});
-$(window).resize(function(){$("#slider").remvoveClass("margins").addClass("margins");});
-</script>
+  <head>
+  <!-- Cool! You're curious enough for our Advanced session! B-) Come. Join us!
+    -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="google-site-verification" content="PG6fW58nzhAS7eftyVNcjSseWQ1-N3LDlQWDtbDjAwk" />
+  <title>The WebOps Club &middot; Center for Innovation, IIT Madras</title>
+  <link href="{{site_url}}static/css/style.css" rel="stylesheet" />
 </head>
 <body>
-<div class="container row-fluid">
-	  <div id="cfi-header"></div>
-      <span id="presents">Presents</span>
-      <div id="slider" class="margins">
-          <img src="{{site_url}}static/img/prince.jpg" alt="" />
-          <img src="{{site_url}}static/img/prince1.jpg" alt="" />
-      </div>
-</div>
-<div id="dockContainer">
-	<div id="dockWrapper"> 
-		  <div class="cap left"></div>
-          <ul class="osx-dock">
-                <li class="active">
-                	<span>Google Developers</span>
-                    <a href="https://developers.google.com/" title="Google Developers" target="_blank"><img src="{{site_url}}static/img/google.png" /></a>
-                </li>
-                <li class="">
-                	<span>Facebook Developers</span>
-                    <a href="https://developers.facebook.com/" title="Facebook Developers" target="_blank"><img src="{{site_url}}static/img/fb-dev.png" /></a>
-                </li>
-                <li class="">
-                	<span>Android Developer</span>
-                    <a href="http://developer.android.com/index.html" title="Android Developers" target="_blank"><img src="{{site_url}}static/img/android.png" /></a>
-                </li>
-                <li class="">
-                	<span>Github</span>
-                    <a href="https://github.com/" title="Github" target="_blank"><img src="{{site_url}}static/img/github.png" /></a>
-                </li>
-                <li class="">
-                	<span>Twitter Developers</span>
-                    <a href="https://dev.twitter.com/" title="Twitter Developers" target="_blank"><img src="{{site_url}}static/img/twitter.png" /></a>
-                </li>
-                <li class="">
-                	<span style="left:-15px;">Join the Club</span>
-                    <a href="https://groups.google.com/forum/?hl=en-GB#!forum/webops-club-iitm" title="Sign Up" target="_blank"><img src="{{site_url}}static/img/gg.jpg"/></a>
-                </li>
-                <li class="">
-                	<span>Mozilla Developer Network</span>
-                    <a href="https://developer.mozilla.org/en-US/" title="Mozilla Developer Network" target="_blank"><img src="{{site_url}}static/img/mdn.png" style="width:44px;"/></a>
-                </li>
-                <li class="">
-                	<span>Apple Developer</span>
-                    <a href="https://developer.apple.com/" title="Apple Developers" target="_blank"><img src="{{site_url}}static/img/apple.png" style="width:38px;"/></a>
-                </li>
-                <li class="">
-                	<span>jQuery</span>
-                    <a href="http://jquery.com/" title="jQuery" target="_blank"><img src="{{site_url}}static/img/jquery.png" /></a>
-                </li>
-                <li class="">
-                	<span>The django Project</span>
-                    <a href="https://www.djangoproject.com/" title="django" target="_blank"><img src="{{site_url}}static/img/django.png" /></a>
-                </li>
-                <li class="">
-                	<span>Wordpress framework</span>
-                    <a href="http://wordpress.org/" title="wordpress" target="_blank"><img src="{{site_url}}static/img/wp.png" /></a>
-                </li>
-          </ul>
+  <div class="container row-fluid">
+    <div id="cfi-header" ><a href="http://cfi.iitm.ac.in/" target="_blank"><img src="{{site_url}}static/img/cfi.png" alt="Center for Innovation, IIT Madras" /></a></div>
+    <span id="presents">Presents</span>
+    <div id="slider" class="margins">
+      <img src="{{site_url}}static/img/prince.jpg" alt="The WebOps Club" />
+      <img src="{{site_url}}static/img/prince1.jpg" alt="Coming Soon" />
     </div>
-</div>
-</body>
+  </div>
+  <div id="dockContainer">
+    <div id="dockWrapper"> 
+      <div class="cap left"></div>
+	<ul class="osx-dock">
+	  <li class="active">
+	    <span>Google Developers</span>
+	    <a href="https://developers.google.com/" title="Google Developers" target="_blank"><img src="{{site_url}}static/img/google.png" alt="Google Developers" /></a>
+	  </li>
+	  <li class="">
+	    <span>Facebook Developers</span>
+	    <a href="https://developers.facebook.com/" title="Facebook Developers" target="_blank"><img src="{{site_url}}static/img/fb-dev.png" alt="Facebook Developers" /></a>
+	  </li>
+	  <li class="">
+	    <span>Android Developer</span>
+	    <a href="http://developer.android.com/index.html" title="Android Developers" target="_blank"><img src="{{site_url}}static/img/android.png" alt="Android Developers" /></a>
+	  </li>
+	  <li class="">
+	    <span>Github</span>
+	    <a href="https://github.com/" title="Github" target="_blank"><img src="{{site_url}}static/img/github.png" alt="Github" /></a>
+	  </li>
+	  <li class="">
+	    <span>Twitter Developers</span>
+	    <a href="https://dev.twitter.com/" title="Twitter Developers" target="_blank"><img src="{{site_url}}static/img/twitter.png" alt="Twitter Developers" /></a>
+	  </li>
+	  <li class="">
+	    <span style="left:-15px;">Join the Club</span>
+	    <a href="https://groups.google.com/forum/?hl=en-GB#!forum/webops-club-iitm" title="Sign Up" target="_blank"><img src="{{site_url}}static/img/gg.jpg" alt="The WebOps Club - Google Group" /></a>
+	  </li>
+	  <li class="">
+	    <span>Mozilla Developer Network</span>
+	    <a href="https://developer.mozilla.org/en-US/" title="Mozilla Developer Network" target="_blank"><img src="{{site_url}}static/img/mdn.png" style="width:44px;"alt="Mozilla Developer Network" /></a>
+	  </li>
+	  <li class="">
+	    <span>Apple Developer</span>
+	    <a href="https://developer.apple.com/" title="Apple Developers" target="_blank"><img src="{{site_url}}static/img/apple.png" style="width:38px;" alt="Apple Developer" /></a>
+	  </li>
+	  <li class="">
+	    <span>jQuery</span>
+	    <a href="http://jquery.com/" title="jQuery" target="_blank"><img src="{{site_url}}static/img/jquery.png" alt="jQuery" /></a>
+	  </li>
+	  <li class="">
+	    <span>The django Project</span>
+	    <a href="https://www.djangoproject.com/" title="django" target="_blank"><img src="{{site_url}}static/img/django.png" alt="django" /></a>
+	  </li>
+	  <li class="">
+	    <span>Wordpress framework</span>
+	    <a href="http://wordpress.org/" title="wordpress" target="_blank"><img src="{{site_url}}static/img/wp.png" alt="Wordpress framework" /></a>
+	  </li>
+	</ul>
+      </div>
+    </div>
+    <script src="{{site_url}}static/js/jquery.js" type="text/javascript"></script>
+    <script src="{{site_url}}static/js/flux.min.js" type="text/javascript"></script>
+    <script src="{{site_url}}static/js/google_analytics.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(function(){
+      if(flux.browser.supports3d){
+	window.myFlux = new flux.slider('#slider',{
+	  autoplay: false,
+	  pagination: false,
+	  controls: true,
+	  transitions: ['tiles3d']
+	});
+      }else{
+	window.myFlux = new flux.slider('#slider',{
+	  autoplay: false,
+	  pagination: false,
+	  controls: true,
+	  transitions: ['blocks2']
+	});
+      }
+      if(!flux.browser.supportsTransitions){alert("This page requires a browser that supports CSS3 transitions");}
+    });
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $("#slider").hover(function(){
+	if(flux.browser.supports3d){window.myFlux.next('bars3d');}
+	else{window.myFlux.next('blinds');}
+      },  
+      function(){
+	window.myFlux.stop();
+      });
+    });
+    $(window).resize(function(){$("#slider").removeClass("margins").addClass("margins");});
+    </script>
+  </body>
 </html>
