@@ -18,8 +18,6 @@ LANGUAGE_CODE = 'en-gb'
 
 SITE_ID = 1
 
-SITE_URL = 'http://localhost:8000/'
-
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
 USE_I18N = True
@@ -38,7 +36,7 @@ MEDIA_URL = ''
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
-STATIC_URL = '/static/'
+STATIC_URL = SITE_URL + 'static/'
 
 # List of finder classes that know how to find static files in
 # various locations.
