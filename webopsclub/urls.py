@@ -8,7 +8,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'webopsclub.views.home', name='home'),
-    url(r'^wired/$', 'webopsclub.views.wired', name='wired'),
+    url(r'^getwired/$', 'webopsclub.views.wired', name='wired'),
     # url(r'^webopsclub/', include('webopsclub.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
