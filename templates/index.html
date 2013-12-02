@@ -3,10 +3,20 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>The WebOps Club</title>
+<link href="{{site_url}}static/css/bootstrap.min.css" rel="stylesheet" />
 <link href="{{site_url}}static/css/style.css" rel="stylesheet" />
+<style>
+#slider .btn-lg{
+	position:relative;
+	z-index:100000;
+	left:42%;
+	top:-55%;
+	font-size:24px;
+}
+</style>
 <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 <script src="{{site_url}}static/js/jquery.js" type="text/javascript"></script>
-<script src="{{site_url}}static/js/flux.min.js" type="text/javascript"></script>
+<!--<script src="{{site_url}}static/js/flux.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 $(function(){
 	if(flux.browser.supports3d){
@@ -38,15 +48,16 @@ $(document).ready(function() {
 	function(){window.myFlux.stop();});
 });
 $(window).resize(function(){$("#slider").remvoveClass("margins").addClass("margins");});
-</script>
+</script>-->
 </head>
 <body>
-<div class="container row-fluid">
+<div class="contain row-fluid">
 	  <div id="cfi-header"></div>
       <span id="presents">Presents</span>
       <div id="slider" class="margins">
-          <img src="{{site_url}}static/img/prince.jpg" alt="" />
+          <!--<img src="{{site_url}}static/img/prince.jpg" alt="" />-->
           <img src="{{site_url}}static/img/wired-in.jpg" alt="" />
+          <a href="{{site_url}}getwired" class="btn btn-primary btn-lg">Get Wired-in</a>
       </div>
 </div>
 <div id="dockContainer">
