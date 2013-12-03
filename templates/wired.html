@@ -1,110 +1,122 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Wired-in Winter | The WebOps Club, CFI, IITM</title>
-<link rel="stylesheet" href="{{static_url}}css/bootstrap.min.css" />
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300,400italic,700italic' rel='stylesheet' type='text/css'>
-<style>
-body{
-	font-family: 'Roboto', sans-serif;
-}
-strong{
-	font-weight:700!important;
-}
-h1,h2{
-	font-family: 'Roboto', sans-serif;
-	font-weight:300!important
-}
-strong em{
-	font-style:italic;
-}
-.scrollable:before{
-	display: block; 
-  	content: " "; 
-  	margin-top: -210px; 
-  	height: 210px; 
-  	visibility: hidden; 
-}
-</style>
-<script	type="text/javascript" src="{{static_url}}js/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="{{static_url}}js/bootstrap.min.js"></script>
-  <script src="{{static_url}}js/jquery.scrollTo.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-  $("#sidebar").find("a").click(function(){
-    $.scrollTo($(this).attr('href'), 800);
-  });
-});
-</script>
-</head>
-<body data-spy="scroll" data-target="#sidebar">
-<div class="container">
-	<div class="row">
-    	<div class="col-md-11" style="position:fixed;background:#fff;z-index:10000;">
-    	<center><img src="{{static_url}}img/cfi-logo.png" style="margin:10px 0px;"/>
-	<br>The WebOps Club presents its first ever
-        <h1>Wired-in Winter</h1>
-       	</center>
-        <hr class="separator">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Wired-in Winter | The WebOps Club, CFI, IITM</title>
+    <link rel="stylesheet" href="{{static_url}}css/bootstrap.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300,400italic,700italic' rel='stylesheet' type='text/css'>
+    <style>
+    body{
+	    font-family: 'Roboto', sans-serif;
+    }
+    strong{
+	    font-weight:700!important;
+    }
+    h1,h2{
+	    font-family: 'Roboto', sans-serif;
+	    font-weight:300!important
+    }
+    strong em{
+	    font-style:italic;
+    }
+    .scrollable:before{
+	    display: block; 
+      	content: " "; 
+      	margin-top: -210px; 
+      	height: 210px; 
+      	visibility: hidden; 
+    }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target="#sidebar">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=177749539086313";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="container">
+    	<div class="row">
+      	<div class="col-md-6 col-md-offset-2" style="position:fixed;background:#fff;z-index:10000;">
+        	<center>
+        	  <img src="{{static_url}}img/cfi-logo.png" style="margin:10px 0px;"/>
+          	<br>The WebOps Club presents its first ever
+            <h1>Wired-in Winter</h1>
+            <hr class="separator">
+         	</center>
         </div>
-    </div>
-	<div class="row content" style="padding-top:210px;">
-    	<div id="sidebar" class="col-md-3">
-            <ul class="nav nav-stacked nav-pills affix">
-                <li class="active"><a href="#intro">Introduction</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#register">Register</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
+        <div class="col-md-4 col-md-offset-8" style="position:fixed;background:#fff;z-index:10000;padding-top:20px;">
+        <div class="fb-like" data-href="https://www.facebook.com/thewebopsclubiitm" data-width="100" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+        </div>
+      </div>
+    	<div class="row content" style="padding-top:210px;">
+      	<div id="sidebar" class="col-md-3">
+          <ul class="nav nav-stacked nav-pills affix">
+            <li class="active"><a href="#intro">Introduction</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#register">Register</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
         </div>
         <div class="col-md-9 info">
         	<section id="intro" class="scrollable">
-            	<strong>Huzzah! End Sems over!</strong>
-			    <p>That leaves us all with ~50 days to enjoy! Why not play a prank on your friends or have some fun or learn a 	new language or make your mark on the web? Why not do all of it at once? Come join The WebOps Club’s first <strong>Wired-in-Winter!</strong></p>
-                <center><img alt="wiredin" src="{{static_url}}img/image01.png" width="400" height="auto"/>
-                <p><em>'Don't disturb him. He is wired in.'</em></p></center>
-			</section>
-            <hr class="separator">
-            <section id="faq" class="scrollable">
-            	<h2>FAQ</h2>
-            	<p><strong>What is it?</strong></p>
-				<p>Got enthu to learn? We are here to help you form teams and guide you with some interesting projects.</p>
-				<p>Got an idea for an app? Develop it with our expert guidance.</p>
-            	<p><strong><em>'It has been over 4 months since I went home. I don't want to stay back.'</em></strong></p>
-				<p>You don't need to! Work from your home. Work when you are bored. Collaborate using Hangouts, Git, and a variety of other tools. Form teams with friends both near and far. Build that dream app you’ve always wanted to.</p>
-                <p><strong>What do I get out of this?</strong></p>
-				<p>That is pretty much entirely in your hands. This is our efforts to find the talented guys among you who also have enthu. And if you prove to be among that elite group, you get</p>
-				<ul>
-                	<li>to work on paid website development offers</li>
-                    <li>preference during WebOps Coordship selections</li>
-                    <li>ideas and teammates for future hackathons</li>
-                    <li>resume pointers</li>
-                </ul>
-                <p><strong><em>‘I have no fundaes :(. I couldn’t attend any of the sessions due to sem.’</em></strong></p>
-				<p>If you are reading this, then you must be having high enthu! And that is sufficient to get involved in <strong>Wired-in Winter</strong>! We will help you pick up the fundaes along the way.</p>
-            </section>
-            <hr class="separator">
+          	<strong>Huzzah! End Sems over!</strong>
+    		    <p>That leaves us all with ~50 days to enjoy! Why not play a prank on your friends or have some fun or learn a 	new language or make your mark on the web? Why not do all of it at once? Come join The WebOps Club’s first <strong>Wired-in-Winter!</strong></p>
+            <center><img alt="wiredin" src="{{static_url}}img/image01.png" width="400" height="auto"/>
+            <p><em>'Don't disturb him. He is wired in.'</em></p></center>
+    			</section>
+          <hr class="separator">
+          <section id="faq" class="scrollable">
+          	<h2>FAQ</h2>
+          	<p><strong>What is it?</strong></p>
+    				<p>Got enthu to learn? We are here to help you form teams and guide you with some interesting projects.</p>
+    				<p>Got an idea for an app? Develop it with our expert guidance.</p>
+          	<p><strong><em>'It has been over 4 months since I went home. I don't want to stay back.'</em></strong></p>
+    				<p>You don't need to! Work from your home. Work when you are bored. Collaborate using Hangouts, Git, and a variety of other tools. Form teams with friends both near and far. Build that dream app you’ve always wanted to.</p>
+            <p><strong>What do I get out of this?</strong></p>
+    				<p>That is pretty much entirely in your hands. This is our efforts to find the talented guys among you who also have enthu. And if you prove to be among that elite group, you get</p>
+    				<ul>
+            	<li>to work on paid website development offers</li>
+              <li>preference during WebOps Coordship selections</li>
+              <li>ideas and teammates for future hackathons</li>
+              <li>resume pointers</li>
+            </ul>
+            <p><strong><em>‘I have no fundaes :(. I couldn’t attend any of the sessions due to sem.’</em></strong></p>
+    				<p>If you are reading this, then you must be having high enthu! And that is sufficient to get involved in <strong>Wired-in Winter</strong>! We will help you pick up the fundaes along the way.</p>
+          </section>
+          <hr class="separator">
 			 <!--<section id="register" style="height:180px;" class="scrollable">
              	<h2>Register</h2>
             	<section class="col-md-6 pull-left"><center>Scan the Qr code below:<br /><img alt="wiredin" src="{{static_url}}img/image00.png" height="100"/></center></section>
                 <section class="col-md-6 pull-right"><center>Or sign up at <br /><a href="http://goo.gl/oU2Wm2">http://goo.gl/oU2Wm2</a></center></section>
-            </section>-->
-            <section id="register" style="display:block;" class="scrollable">
-            	<h2>Register</h2>
-                <center>Scan the QR code below or Sign up at <a href="http://goo.gl/oU2Wm2">http://goo.gl/oU2Wm2</a><br /><br/><img alt="wiredin" src="{{static_url}}img/image00.png" height="100"/></section> </center>         
-            </section>
-            <hr class="separator">
-            <section id="contact" style="display:block" class="scrollable">
-            	<h2>Contact Us</h2>
-                <table class="table table-bordered table-hover">
-                	<tr><td>S.R.Manikandasriram</td><td><span class="glyphicon glyphicon-earphone"></span> +91 99625 13029</td><td><span class="glyphicon glyphicon-envelope"></span> srmanikandasriram@gmail.com</td></tr>
-                    <tr><td>Suraj Yerramilli</td><td><span class="glyphicon glyphicon-earphone"></span> +91 97909 24936</td><td><span class="glyphicon glyphicon-envelope"></span> surajy123@gmail.com</td></tr>
-                </table>
-            </section>
-            </div>
+          </section>-->
+          <section id="register" style="display:block;" class="scrollable">
+          	<h2>Register</h2>
+            <center>Scan the QR code below or Sign up at <a href="http://goo.gl/oU2Wm2">http://goo.gl/oU2Wm2</a><br /><br/><img alt="wiredin" src="{{static_url}}img/image00.png" height="100"/></center>         
+          </section>
+          <hr class="separator">
+          <section id="contact" style="display:block" class="scrollable">
+          	<h2>Contact Us</h2>
+            <table class="table table-bordered table-hover">
+            	<tr><td>S.R.Manikandasriram</td><td><span class="glyphicon glyphicon-earphone"></span> +91 99625 13029</td><td><span class="glyphicon glyphicon-envelope"></span> srmanikandasriram@gmail.com</td></tr>
+              <tr><td>Suraj Yerramilli</td><td><span class="glyphicon glyphicon-earphone"></span> +91 97909 24936</td><td><span class="glyphicon glyphicon-envelope"></span> surajy123@gmail.com</td></tr>
+            </table>
+          </section>
         </div>
+      </div>
     </div>
-</div>
-</body>
+  </div>
+  <script	type="text/javascript" src="{{static_url}}js/jquery-1.10.2.min.js"></script>
+  <script type="text/javascript" src="{{static_url}}js/bootstrap.min.js"></script>
+  <script src="{{static_url}}js/jquery.scrollTo.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $("#sidebar").find("a").click(function(){
+      $.scrollTo($(this).attr('href'), 800);
+    });
+  });
+  </script>
+  </body>
 </html>
